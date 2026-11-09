@@ -1,0 +1,179 @@
+{
+  "baselines": {
+    "Majority class": {
+      "macro_f1": 0.209,
+      "accuracy": 0.4565,
+      "per_class_f1": [
+        0.0,
+        0.6269,
+        0.0
+      ],
+      "quadratic_kappa": 0.0
+    },
+    "Rule: trust self-rating": {
+      "macro_f1": 0.5354,
+      "accuracy": 0.5768,
+      "per_class_f1": [
+        0.6686,
+        0.5018,
+        0.436
+      ],
+      "quadratic_kappa": 0.4405
+    },
+    "Rule: quiz else self-rating": {
+      "macro_f1": 0.6274,
+      "accuracy": 0.653,
+      "per_class_f1": [
+        0.7275,
+        0.5992,
+        0.5555
+      ],
+      "quadratic_kappa": 0.5803
+    }
+  },
+  "models_validation_macro_f1": {
+    "Logistic Regression": 0.7155,
+    "Random Forest": 0.7297,
+    "Gradient Boosting": 0.7429
+  },
+  "winner": "Gradient Boosting",
+  "test": {
+    "macro_f1": 0.7454,
+    "accuracy": 0.768,
+    "per_class_f1": [
+      0.8101,
+      0.7546,
+      0.6715
+    ],
+    "quadratic_kappa": 0.7319
+  },
+  "test_skills_with_quiz": {
+    "macro_f1": 0.7829,
+    "accuracy": 0.8007,
+    "per_class_f1": [
+      0.8416,
+      0.7835,
+      0.7237
+    ],
+    "quadratic_kappa": 0.7773
+  },
+  "test_skills_WITHOUT_quiz": {
+    "macro_f1": 0.6983,
+    "accuracy": 0.7285,
+    "per_class_f1": [
+      0.7709,
+      0.7215,
+      0.6026
+    ],
+    "quadratic_kappa": 0.6741
+  },
+  "baseline_rule_quiz_else_self_WITHOUT_quiz": {
+    "macro_f1": 0.536,
+    "accuracy": 0.5778,
+    "per_class_f1": [
+      0.6641,
+      0.5116,
+      0.4323
+    ],
+    "quadratic_kappa": 0.434
+  },
+  "confusion_matrix_test": [
+    [
+      3938,
+      993,
+      8
+    ],
+    [
+      834,
+      4160,
+      365
+    ],
+    [
+      11,
+      513,
+      917
+    ]
+  ],
+  "class_names": [
+    "No gap",
+    "Moderate gap",
+    "Critical gap"
+  ],
+  "ablation": [
+    {
+      "information_used": "role only",
+      "validation_macro_f1": 0.3554
+    },
+    {
+      "information_used": "+ experience/education",
+      "validation_macro_f1": 0.3832
+    },
+    {
+      "information_used": "+ self rating",
+      "validation_macro_f1": 0.6528
+    },
+    {
+      "information_used": "+ supervisor",
+      "validation_macro_f1": 0.691
+    },
+    {
+      "information_used": "+ quiz scores",
+      "validation_macro_f1": 0.7409
+    },
+    {
+      "information_used": "+ course history",
+      "validation_macro_f1": 0.7398
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "quiz_minus_req",
+      "importance": 0.1225
+    },
+    {
+      "feature": "sup_minus_req",
+      "importance": 0.091
+    },
+    {
+      "feature": "self_minus_req",
+      "importance": 0.0615
+    },
+    {
+      "feature": "req",
+      "importance": 0.0347
+    },
+    {
+      "feature": "self_corrected",
+      "importance": 0.0227
+    },
+    {
+      "feature": "grp_quiz_mean",
+      "importance": 0.0179
+    },
+    {
+      "feature": "grp_sup_mean",
+      "importance": 0.0121
+    },
+    {
+      "feature": "grp_self_mean",
+      "importance": 0.0103
+    },
+    {
+      "feature": "exp_years",
+      "importance": 0.0065
+    },
+    {
+      "feature": "overconf_vs_sup",
+      "importance": 0.0032
+    }
+  ],
+  "gap_size_mae_levels": {
+    "model": 0.2414,
+    "baseline_rule": 0.3724
+  },
+  "rows": {
+    "train": 35116,
+    "val": 11841,
+    "test": 11739
+  }
+}

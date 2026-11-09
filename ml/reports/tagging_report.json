@@ -1,0 +1,380 @@
+{
+  "courses_in": 6988,
+  "courses_relevant": 2107,
+  "context_classifier_mean_f1": 0.604,
+  "context_classifier_note": "F1 of the keyword-blind classifier at re-discovering the rule labels (5-fold out-of-fold)",
+  "per_competency_context_model": {
+    "survey_design": {
+      "positives": 10,
+      "note": "too few examples, rules only"
+    },
+    "stat_inference": {
+      "positives": 100,
+      "precision": 0.612,
+      "recall": 0.6,
+      "f1": 0.606
+    },
+    "regression": {
+      "positives": 43,
+      "precision": 0.607,
+      "recall": 0.791,
+      "f1": 0.687
+    },
+    "time_series": {
+      "positives": 24,
+      "precision": 0.429,
+      "recall": 0.125,
+      "f1": 0.194
+    },
+    "macro_indicators": {
+      "positives": 36,
+      "precision": 0.81,
+      "recall": 0.472,
+      "f1": 0.596
+    },
+    "official_quality": {
+      "positives": 15,
+      "precision": 1.0,
+      "recall": 0.667,
+      "f1": 0.8
+    },
+    "geospatial": {
+      "positives": 19,
+      "precision": 0.917,
+      "recall": 0.579,
+      "f1": 0.71
+    },
+    "research_methods": {
+      "positives": 18,
+      "precision": 1.0,
+      "recall": 0.222,
+      "f1": 0.364
+    },
+    "data_wrangling": {
+      "positives": 14,
+      "note": "too few examples, rules only"
+    },
+    "spreadsheets": {
+      "positives": 72,
+      "precision": 0.434,
+      "recall": 0.5,
+      "f1": 0.465
+    },
+    "sql_db": {
+      "positives": 100,
+      "precision": 0.563,
+      "recall": 0.71,
+      "f1": 0.628
+    },
+    "python_analysis": {
+      "positives": 168,
+      "precision": 0.561,
+      "recall": 0.768,
+      "f1": 0.648
+    },
+    "r_analysis": {
+      "positives": 6,
+      "note": "too few examples, rules only"
+    },
+    "data_viz": {
+      "positives": 44,
+      "precision": 0.531,
+      "recall": 0.591,
+      "f1": 0.559
+    },
+    "machine_learning": {
+      "positives": 143,
+      "precision": 0.834,
+      "recall": 0.881,
+      "f1": 0.857
+    },
+    "deep_learning_ai": {
+      "positives": 94,
+      "precision": 0.699,
+      "recall": 0.766,
+      "f1": 0.731
+    },
+    "text_nlp": {
+      "positives": 22,
+      "precision": 0.667,
+      "recall": 0.545,
+      "f1": 0.6
+    },
+    "big_data_cloud": {
+      "positives": 118,
+      "precision": 0.926,
+      "recall": 0.737,
+      "f1": 0.821
+    },
+    "data_governance": {
+      "positives": 118,
+      "precision": 0.886,
+      "recall": 0.788,
+      "f1": 0.834
+    },
+    "quant_foundations": {
+      "positives": 45,
+      "precision": 0.92,
+      "recall": 0.511,
+      "f1": 0.657
+    },
+    "report_writing": {
+      "positives": 46,
+      "precision": 0.829,
+      "recall": 0.739,
+      "f1": 0.782
+    },
+    "data_storytelling": {
+      "positives": 22,
+      "precision": 0.857,
+      "recall": 0.273,
+      "f1": 0.414
+    },
+    "communication": {
+      "positives": 74,
+      "precision": 0.694,
+      "recall": 0.459,
+      "f1": 0.553
+    },
+    "leadership": {
+      "positives": 75,
+      "precision": 0.967,
+      "recall": 0.773,
+      "f1": 0.859
+    },
+    "project_mgmt": {
+      "positives": 66,
+      "precision": 0.895,
+      "recall": 0.515,
+      "f1": 0.654
+    },
+    "policy_analysis": {
+      "positives": 54,
+      "precision": 0.711,
+      "recall": 0.5,
+      "f1": 0.587
+    },
+    "critical_thinking": {
+      "positives": 29,
+      "precision": 0.833,
+      "recall": 0.172,
+      "f1": 0.286
+    },
+    "ethics_integrity": {
+      "positives": 22,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "change_innovation": {
+      "positives": 65,
+      "precision": 0.615,
+      "recall": 0.492,
+      "f1": 0.547
+    },
+    "productivity_learning": {
+      "positives": 12,
+      "note": "too few examples, rules only"
+    },
+    "public_finance": {
+      "positives": 261,
+      "precision": 0.921,
+      "recall": 0.847,
+      "f1": 0.882
+    }
+  },
+  "coverage": {
+    "survey_design": {
+      "courses": 22,
+      "beginner": 7,
+      "intermediate": 6,
+      "advanced": 9
+    },
+    "stat_inference": {
+      "courses": 162,
+      "beginner": 74,
+      "intermediate": 43,
+      "advanced": 45
+    },
+    "regression": {
+      "courses": 67,
+      "beginner": 33,
+      "intermediate": 21,
+      "advanced": 13
+    },
+    "time_series": {
+      "courses": 25,
+      "beginner": 15,
+      "intermediate": 6,
+      "advanced": 4
+    },
+    "macro_indicators": {
+      "courses": 47,
+      "beginner": 20,
+      "intermediate": 16,
+      "advanced": 11
+    },
+    "official_quality": {
+      "courses": 16,
+      "beginner": 8,
+      "intermediate": 3,
+      "advanced": 5
+    },
+    "geospatial": {
+      "courses": 18,
+      "beginner": 6,
+      "intermediate": 6,
+      "advanced": 6
+    },
+    "research_methods": {
+      "courses": 18,
+      "beginner": 8,
+      "intermediate": 6,
+      "advanced": 4
+    },
+    "data_wrangling": {
+      "courses": 26,
+      "beginner": 16,
+      "intermediate": 4,
+      "advanced": 6
+    },
+    "spreadsheets": {
+      "courses": 86,
+      "beginner": 68,
+      "intermediate": 6,
+      "advanced": 12
+    },
+    "sql_db": {
+      "courses": 112,
+      "beginner": 75,
+      "intermediate": 12,
+      "advanced": 25
+    },
+    "python_analysis": {
+      "courses": 267,
+      "beginner": 182,
+      "intermediate": 32,
+      "advanced": 53
+    },
+    "r_analysis": {
+      "courses": 28,
+      "beginner": 13,
+      "intermediate": 4,
+      "advanced": 11
+    },
+    "data_viz": {
+      "courses": 66,
+      "beginner": 40,
+      "intermediate": 5,
+      "advanced": 21
+    },
+    "machine_learning": {
+      "courses": 267,
+      "beginner": 174,
+      "intermediate": 39,
+      "advanced": 54
+    },
+    "deep_learning_ai": {
+      "courses": 146,
+      "beginner": 96,
+      "intermediate": 24,
+      "advanced": 26
+    },
+    "text_nlp": {
+      "courses": 29,
+      "beginner": 19,
+      "intermediate": 5,
+      "advanced": 5
+    },
+    "big_data_cloud": {
+      "courses": 158,
+      "beginner": 70,
+      "intermediate": 42,
+      "advanced": 46
+    },
+    "data_governance": {
+      "courses": 145,
+      "beginner": 60,
+      "intermediate": 38,
+      "advanced": 47
+    },
+    "quant_foundations": {
+      "courses": 66,
+      "beginner": 29,
+      "intermediate": 26,
+      "advanced": 11
+    },
+    "report_writing": {
+      "courses": 71,
+      "beginner": 16,
+      "intermediate": 16,
+      "advanced": 39
+    },
+    "data_storytelling": {
+      "courses": 32,
+      "beginner": 9,
+      "intermediate": 2,
+      "advanced": 21
+    },
+    "communication": {
+      "courses": 105,
+      "beginner": 25,
+      "intermediate": 28,
+      "advanced": 52
+    },
+    "leadership": {
+      "courses": 159,
+      "beginner": 51,
+      "intermediate": 60,
+      "advanced": 48
+    },
+    "project_mgmt": {
+      "courses": 86,
+      "beginner": 42,
+      "intermediate": 20,
+      "advanced": 24
+    },
+    "policy_analysis": {
+      "courses": 88,
+      "beginner": 25,
+      "intermediate": 48,
+      "advanced": 15
+    },
+    "critical_thinking": {
+      "courses": 29,
+      "beginner": 15,
+      "intermediate": 5,
+      "advanced": 9
+    },
+    "ethics_integrity": {
+      "courses": 21,
+      "beginner": 9,
+      "intermediate": 7,
+      "advanced": 5
+    },
+    "change_innovation": {
+      "courses": 90,
+      "beginner": 28,
+      "intermediate": 25,
+      "advanced": 37
+    },
+    "productivity_learning": {
+      "courses": 20,
+      "beginner": 10,
+      "intermediate": 6,
+      "advanced": 4
+    },
+    "public_finance": {
+      "courses": 468,
+      "beginner": 300,
+      "intermediate": 102,
+      "advanced": 66
+    }
+  },
+  "thin_coverage_competencies": [],
+  "relevant_by_provider": {
+    "Coursera": 1503,
+    "Udemy": 382,
+    "edX": 222
+  }
+}

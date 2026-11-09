@@ -1,0 +1,14 @@
+# Python libraries for the whole project (AI pipeline + web server + quiz generator)
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+joblib
+fastapi
+uvicorn
+python-multipart
+pypdf
+spacy
+# English language model used by the Quiz Lab (installs automatically with pip)
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

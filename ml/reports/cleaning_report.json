@@ -1,0 +1,95 @@
+{
+  "steps": [
+    {
+      "step": "udemy: drop out-of-domain subject (music)",
+      "rows_before": 3678,
+      "rows_after": 2998,
+      "removed": 680,
+      "note": ""
+    },
+    {
+      "step": "load + unify 3 datasets",
+      "rows_before": 7240,
+      "rows_after": 7240,
+      "removed": 0,
+      "note": "common columns"
+    },
+    {
+      "step": "clean text (html, links, coupons, spaces)",
+      "rows_before": 7240,
+      "rows_after": 7240,
+      "removed": 0,
+      "note": ""
+    },
+    {
+      "step": "drop empty/very short titles",
+      "rows_before": 7240,
+      "rows_after": 7240,
+      "removed": 0,
+      "note": ""
+    },
+    {
+      "step": "drop courses with no real description",
+      "rows_before": 7240,
+      "rows_after": 7238,
+      "removed": 2,
+      "note": ""
+    },
+    {
+      "step": "keep English-language courses only",
+      "rows_before": 7238,
+      "rows_after": 7181,
+      "removed": 57,
+      "note": ""
+    },
+    {
+      "step": "dedupe: same URL",
+      "rows_before": 7181,
+      "rows_after": 7076,
+      "removed": 105,
+      "note": ""
+    },
+    {
+      "step": "dedupe: same title in same provider",
+      "rows_before": 7076,
+      "rows_after": 7054,
+      "removed": 22,
+      "note": ""
+    },
+    {
+      "step": "dedupe: near-identical titles (TF-IDF >= 0.92)",
+      "rows_before": 7054,
+      "rows_after": 6988,
+      "removed": 66,
+      "note": ""
+    },
+    {
+      "step": "parse ratings ('Not Calibrated' -> missing)",
+      "rows_before": 6988,
+      "rows_after": 6988,
+      "removed": 0,
+      "note": "3689 courses have no rating"
+    },
+    {
+      "step": "estimate course hours",
+      "rows_before": 6988,
+      "rows_after": 6988,
+      "removed": 0,
+      "note": "3938 imputed from level defaults"
+    }
+  ],
+  "summary": {
+    "final_rows": 6988,
+    "by_provider": {
+      "Coursera": 3378,
+      "Udemy": 2923,
+      "edX": 687
+    },
+    "by_level": {
+      "Beginner": 4299,
+      "Intermediate": 1520,
+      "Advanced": 1169
+    },
+    "level_inferred_share": 0.24
+  }
+}

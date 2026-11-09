@@ -1,0 +1,52 @@
+{
+  "trials": [
+    {
+      "config": {
+        "max_iter": 200,
+        "learning_rate": 0.08,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0
+      },
+      "val_ndcg@10": 0.5092
+    },
+    {
+      "config": {
+        "max_iter": 350,
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 2.0
+      },
+      "val_ndcg@10": 0.541
+    },
+    {
+      "config": {
+        "max_iter": 500,
+        "learning_rate": 0.04,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 5.0,
+        "min_samples_leaf": 40
+      },
+      "val_ndcg@10": 0.5452
+    }
+  ],
+  "best_val_ndcg@10": 0.5452,
+  "candidate_features": [
+    "coverage",
+    "coverage_share",
+    "coverage_vs_best",
+    "max_rel_gap",
+    "n_targets",
+    "primary_gap",
+    "start_mismatch",
+    "end_mismatch",
+    "quality",
+    "log_hours",
+    "level_from",
+    "level_to",
+    "provider",
+    "log_pop",
+    "primary_rel"
+  ],
+  "training_rows": 191958,
+  "positive_rows": 28477
+}
